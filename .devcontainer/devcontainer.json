@@ -1,0 +1,12 @@
+// for format details, see https://aka.ms/vscode-remote/devcontainer.json
+{
+	"name": "Python 3",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": {
+			"USER": "vscode"
+		}
+	},
+	"remoteUser": "vscode"
+}

@@ -1,0 +1,13 @@
+{
+	"configurations": [
+		{
+			"name": "Python: Test",
+			"type": "python",
+			"request": "launch",
+			"module": "pytest",
+			"args": [
+				"tests/"
+			]
+		}
+	]
+}

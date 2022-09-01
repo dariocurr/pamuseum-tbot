@@ -1,0 +1,24 @@
+# for format details, see https://docs.github.com/actions
+
+name: Validate Dockerfile
+
+on:
+  push:
+    paths-ignore:
+      - ".gitignore"
+      - "LICENSE"
+      - "README.md"
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate_dockerfile:
+    uses: dariocurr/actions/.github/workflows/validate_dockerfile.yml@main
+    with:
+      dockerfile: ./.devcontainer/Dockerfile
+      from: dev
+      to: main
