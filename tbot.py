@@ -1,12 +1,13 @@
 import os
 import pickle
-import requests
 import time
+
+import rdflib.graph as g
+import requests
 import telepot
 from geopy.distance import great_circle
 from telepot.loop import MessageLoop
-from telepot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
-import rdflib.graph as g
+from telepot.namedtuple import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 def read_monuments():
